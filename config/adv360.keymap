@@ -42,7 +42,7 @@
             bindings = <
        &kp CAPS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION              &tog 1                                                                           &mo 3  &kp QUESTION  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
         &kp TAB           &kp Q            &kp W             &kp E              &kp R            &kp T              &tog 5                                                                           &mo 4         &kp Y          &kp U              &kp I                 &kp O                  &kp P   &kp BSLH
-        &kp ESC           &kp A            &kp S             &kp D              &kp F            &kp G               &none    &kp LEFT  &kp RIGHT                  &kp RIGHT_COMMAND  &kp RCTRL      &none         &kp H          &kp J              &kp K                 &kp L               &kp SEMI    &kp SQT
+        &kp ESC           &kp A            &kp S             &kp D              &kp F            &kp G               &mo 6    &kp LEFT  &kp RIGHT                  &kp RIGHT_COMMAND  &kp RCTRL      &none         &kp H          &kp J              &kp K                 &kp L               &kp SEMI    &kp SQT
  &kp LEFT_SHIFT           &kp Z            &kp X             &kp C              &kp V            &kp B                                     &kp UP                        &macro_copy                               &kp N          &kp M          &kp COMMA               &kp DOT               &kp FSLH  &kp RSHFT
           &mo 2    &kp LEFT_ALT         &kp PLUS         &kp EQUAL          &kp COLON                             &kp BSPC  &kp LSHIFT   &kp DOWN                       &macro_paste  &kp ENTER  &kp SPACE                     &kp APOS  &kp DOUBLE_QUOTES             &kp GRAVE         &kp UNDERSCORE      &mo 2
             >;
@@ -95,6 +95,16 @@
     &trans     &trans    &trans    &trans     &trans  &trans            &trans  &kp LEFT_CONTROL  &kp LEFT_ALT                         &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans  &trans
     &trans     &trans    &trans    &trans     &trans  &trans                                          &kp HOME                    &kp PAGE_UP                  &trans  &trans    &trans            &trans             &trans  &trans
     &trans  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &trans        &kp DELETE       &kp END                  &kp PAGE_DOWN  &trans  &trans          &kp UP  &kp DOWN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+            >;
+        };
+
+        layer_Keypad_mod {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                     &trans  &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                     &trans  &trans   &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans     &trans  &trans   &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                     &trans   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &kp KP_N0              &trans        &trans    &kp KP_DOT           &trans  &trans
             >;
         };
 
